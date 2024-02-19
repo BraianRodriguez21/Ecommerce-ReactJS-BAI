@@ -1,12 +1,12 @@
 [
     {
-      "id": 1,
-      "name": "Guitarra Electrica",
-      "description": "Guitarra Epiphone SG de 2 pastillas humbucker",
-      "stock": 30,
-      "price": 400000,
-      "categoria": "Guitarra",
-      "imagen": "https://http2.mlstatic.com/D_NQ_NP_739195-MLA46818597679_072021-O.webp"
+        "id": 1,
+        "name": "Guitarra Electrica",
+        "description": "Guitarra Epiphone SG de 2 pastillas humbucker",
+        "stock": 30,
+        "price": 400000,
+        "categoria": "Guitarra",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_739195-MLA46818597679_072021-O.webp"
     },
 
     {
