@@ -21,3 +21,19 @@
   .Product h3 {
     margin-top: 0;
 }
+.item-detail {
+  padding: 20px;
+}
+
+.item-detail h1 {
+  text-transform: capitalize;
+}
+
+.productos-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.productos-info p {
+  margin: 5px 0;
+}
