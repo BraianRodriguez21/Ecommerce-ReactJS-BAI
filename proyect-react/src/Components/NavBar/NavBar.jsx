@@ -12,10 +12,10 @@ function NavBar() {
           <Navbar.Brand href="#home"><Logo/></Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Guitarras</Nav.Link>
-            <Nav.Link href="#pricing">Pianos</Nav.Link>
-            <Nav.Link href="#pricing">Bajos</Nav.Link>
-            <Nav.Link href="#pricing"> <CarWidget/> </Nav.Link>
+            <Nav.Link href="#Guitarras">Guitarras</Nav.Link>
+            <Nav.Link href="#Pianos">Pianos</Nav.Link>
+            <Nav.Link href="#Bajos">Bajos</Nav.Link>
+            <Nav.Link href="#Carrito"> <CarWidget/> </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
