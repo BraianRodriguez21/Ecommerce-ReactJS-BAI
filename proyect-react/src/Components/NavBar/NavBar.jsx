@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CarWidget from '../CartWidget/CarWidget';
 import Logo from '../../Logo';
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   return (
@@ -11,11 +12,12 @@ function NavBar() {
         <Container>
           <Navbar.Brand href="#home"><Logo/></Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#Guitarras">Guitarras</Nav.Link>
-            <Nav.Link href="#Pianos">Pianos</Nav.Link>
-            <Nav.Link href="#Bajos">Bajos</Nav.Link>
-            <Nav.Link href="#Carrito"> <CarWidget/> </Nav.Link>
+          <NavLink to="/categoria/Home">Home</NavLink>
+            <NavLink to="/categoria/Guitarra">Guitarra</NavLink>
+            <NavLink to="/categoria/Amplificador" >Amplificador</NavLink>
+            <NavLink to="/categoria/Pianos">Pianos</NavLink>
+            <NavLink to="/categoria/Microfono">Microfono</NavLink>
+            <NavLink to="/Carrito"> <CarWidget/> </NavLink>
           </Nav>
         </Container>
       </Navbar>
