@@ -17,7 +17,7 @@ function NavBar() {
             <NavLink to="/categoria/Amplificador" >Amplificador</NavLink>
             <NavLink to="/categoria/Pianos">Pianos</NavLink>
             <NavLink to="/categoria/Microfono">Microfono</NavLink>
-            <NavLink to="/Carrito"> <CarWidget/> </NavLink>
+            <NavLink to="/Cart"> <CarWidget/> </NavLink>
           </Nav>
         </Container>
       </Navbar>

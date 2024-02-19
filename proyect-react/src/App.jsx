@@ -4,6 +4,7 @@ import React from 'react';
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Cart from './Components/carts/Cart';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
     <NavBar />
     <Routes>
       <Route path="/" element={<ItemListContainer />} />
-      <Route path="/categoria/:categoryId" element={<ItemListContainer />} />
+        <Route path="/categoria/:categoryId" element={<ItemListContainer />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </BrowserRouter>
   );
