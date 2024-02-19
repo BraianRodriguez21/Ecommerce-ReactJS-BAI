@@ -30,7 +30,7 @@ export default function ItemDetailContainer() {
     <main className="item-detail">
       <h1 style={{ textTransform: "capitalize" }}>{producto.name}</h1>
       <section style={{ display: "flex" }}>
-        <section className="pokemon-info">
+        <section className="productos-info">
           <p>Description: {producto.description}</p>
           <p>Stock: {producto.stock}</p>
           <p>Price: {producto.price}</p>
