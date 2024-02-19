@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 export default function ItemDetailContainer() {
   const [producto, setProducto] = useState();
-  const { productId } = useParams();
+  const { productId } = useParams().id;
 
   useEffect(() => {
 
