@@ -10,7 +10,7 @@ function NavBar() {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home"><Logo/></Navbar.Brand>
+        <NavLink to="/"><Navbar.Brand ><Logo/></Navbar.Brand></NavLink>
           <Nav className="me-auto">
           <NavLink to="/categoria/Home">Home</NavLink>
             <NavLink to="/categoria/Guitarra">Guitarra</NavLink>

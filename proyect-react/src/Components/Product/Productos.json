@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "g1",
         "name": "Guitarra Electrica",
         "description": "Guitarra Epiphone SG de 2 pastillas humbucker",
         "stock": 30,
@@ -10,7 +10,7 @@
     },
 
     {
-        "id": 2,
+        "id": "g2",
         "name": "Piano",
         "description": "Piano Yamaha",
         "stock": 20,
@@ -19,7 +19,7 @@
         "imagen": "https://www.pianos.rocks/cdn/shop/products/41xdtGJBfmL_grande.jpg?v=1658805592"
     },
     {
-        "id": 3,
+        "id": "g3",
         "name": "Bajo Ibanez GSR200",
         "description": "Guitarra Epiphone SG de 2 pastillas humbucker",
         "stock": 150,
@@ -28,7 +28,7 @@
         "imagen": "https://acdn.mitiendanube.com/stores/152/693/products/base-productos_0000_2006260116045021_01_medium1-6de901621c0d807f3c16522951385092-640-0.jpg"
     },
     {
-        "id": 4,
+        "id": "g4",
         "name": "Guitarra Electrica Telecaster",
         "description": "Fender Telecaster de 2 Pastillas Single Coil modificadas",
         "stock": 25,
@@ -37,7 +37,7 @@
         "imagen": "https://http2.mlstatic.com/D_NQ_NP_914794-MLA54202754499_032023-O.webp"
     },
     { 
-        "id": 5,
+        "id": "g5",
         "name": "Microfono Sure",
         "description": "SHURE SV100 MICRÓFONO DE MANO",
         "stock": 45,
@@ -46,7 +46,7 @@
         "imagen": "https://www.heavenimagenes.com/heavencommerce/1a035daf-7cc1-4bcb-89f7-07fab0b18bbb/images/v2/SHURE/888_medium.jpg"
     },
     {
-        "id": 6,
+        "id": "g6",
         "name": "Amplificador De Guitarra Vox",
         "description": "Amplificador de Guitarra VOX Combo Valvular 30W 1x12 Celestion VX12",
         "stock": 25,

@@ -1,10 +1,13 @@
-import { useState, useEffect } from "react";
+/* import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 export default function ItemDetailContainer() {
   const [producto, setProducto] = useState();
-  const { productId } = useParams().id;
+  const { productId } = useParams();
 
+
+
+  
   useEffect(() => {
 
     const fetchProductData = async () => {
@@ -38,4 +41,45 @@ export default function ItemDetailContainer() {
       </section>
     </main>
   );
+}
+ */
+
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import ProductosJson from "../Product/Productos.json";
+import ItemDetail from "../ItemDetail/ItemDetail";
+
+
+export default function ItemDetailContainer() {
+  const [producto, setProducto] = useState(null);
+  const { productId } = useParams();
+
+  function buscaId(productId) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        const producto = ProductosJson.find((producto) => producto.id === productId);
+        if (producto) {
+          resolve(producto);
+        } else {
+          reject("El producto que buscas ya no está disponible");
+        }
+      }, 2000);
+    });
+  }
+
+  useEffect(() => {
+    buscaId(productId)
+      .then((res) => setProducto(res))
+      .catch((messageNF) => {
+        console.log(messageNF);
+      })
+  }, [productId]);
+
+
+  return (
+
+    <ItemDetail ProductoSeleccionado= {producto}/>
+
+  );
+
 }
