@@ -1,3 +1,6 @@
+import ItemCount from "../ItemCount/ItemCount";
+
+
 const ItemDetail = ({ ProductoSeleccionado }) => {
     console.log(ProductoSeleccionado);
 
@@ -18,6 +21,8 @@ const ItemDetail = ({ ProductoSeleccionado }) => {
                     <p>Category: {ProductoSeleccionado.categoria}</p> 
                 </section>
             </section>
+            <ItemCount stock={ProductoSeleccionado.stock}/>
+            
         </main>
     );
 };
