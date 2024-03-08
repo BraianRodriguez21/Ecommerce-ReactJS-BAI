@@ -15,7 +15,7 @@ const ItemDetail = ({ ProductoSeleccionado }) => {
                     <p>Description: {ProductoSeleccionado.description}</p>
                     <p>Stock: {ProductoSeleccionado.stock}</p>
                     <p>Price: {ProductoSeleccionado.price}</p>
-                    <p>Category: {ProductoSeleccionado.categoria}</p> {/* Cambié "category" por "categoria" */}
+                    <p>Category: {ProductoSeleccionado.categoria}</p> 
                 </section>
             </section>
         </main>

@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CarWidget from '../CartWidget/CarWidget';
 import Logo from '../../Logo';
+import { getFirestore, collection, getDocs, query, where } from "firebase/firestore";
 import { NavLink } from 'react-router-dom';
 
 function NavBar() {
@@ -12,11 +13,11 @@ function NavBar() {
         <Container>
         <NavLink to="/"><Navbar.Brand ><Logo/></Navbar.Brand></NavLink>
           <Nav className="me-auto">
-          <NavLink to="/categoria/Home">Home</NavLink>
-            <NavLink to="/categoria/Guitarra">Guitarra</NavLink>
-            <NavLink to="/categoria/Amplificador" >Amplificador</NavLink>
-            <NavLink to="/categoria/Pianos">Pianos</NavLink>
-            <NavLink to="/categoria/Microfono">Microfono</NavLink>
+          <NavLink to="/categoryId/Home">Home</NavLink>
+            <NavLink to="/categoryId/Guitarra">Guitarra</NavLink>
+            <NavLink to="/categoryId/Amplificador" >Amplificador</NavLink>
+            <NavLink to="/categoryId/Pianos">Pianos</NavLink>
+            <NavLink to="/categoryId/Microfono">Microfono</NavLink>
             <NavLink to="/Cart"> <CarWidget/> </NavLink>
           </Nav>
         </Container>
