@@ -1,13 +1,17 @@
+import CartContext from "../CartContext/CartContext";
 import ItemCount from "../ItemCount/ItemCount";
+import { useContext, useEffect,useState } from "react";
+// const {cart,addToCart} = useContext(CartContext)
 
 
 const ItemDetail = ({ ProductoSeleccionado }) => {
-    console.log(ProductoSeleccionado);
+
+    useEffect(() => {
+          }, []);
 
     if (!ProductoSeleccionado) {
         return <div>Cargando...</div>;
     }
-
     return (
         <main className="item-detail">
             <h1 style={{ textTransform: "capitalize" }}>{ProductoSeleccionado.name}</h1>
@@ -21,7 +25,7 @@ const ItemDetail = ({ ProductoSeleccionado }) => {
                     <p>Category: {ProductoSeleccionado.categoria}</p> 
                 </section>
             </section>
-            <ItemCount stock={ProductoSeleccionado.stock}/>
+            <ItemCount stock={10} initial={2} item={ProductoSeleccionado}/>
             
         </main>
     );
