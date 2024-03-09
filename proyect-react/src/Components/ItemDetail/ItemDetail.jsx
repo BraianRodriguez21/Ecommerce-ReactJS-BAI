@@ -7,7 +7,7 @@ import { useContext, useEffect,useState } from "react";
 const ItemDetail = ({ ProductoSeleccionado }) => {
 
     useEffect(() => {
-          }, []);
+        }, []);
 
     if (!ProductoSeleccionado) {
         return <div>Cargando...</div>;
@@ -25,7 +25,7 @@ const ItemDetail = ({ ProductoSeleccionado }) => {
                     <p>Category: {ProductoSeleccionado.categoria}</p> 
                 </section>
             </section>
-            <ItemCount stock={10} initial={2} item={ProductoSeleccionado}/>
+            <ItemCount stock={10} initial={1} item={ProductoSeleccionado}/>
             
         </main>
     );
