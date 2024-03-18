@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
- export default function Item ({product}){
+export default function Item ({product}){
     return(
         <div>
             <img src={product.imagen}alt="" />
@@ -13,4 +13,4 @@ import { Link } from "react-router-dom";
           </Link>
         </div>
     )
- }
+}
