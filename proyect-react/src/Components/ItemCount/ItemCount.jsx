@@ -6,13 +6,15 @@ const ItemCount = ({ stock = 0, initial = 1, item }) => {
 const [stockReal,setStockReal] = useState(stock)
 const {addToCart} = useContext(CartContext)
 
-const AgregarCarrito = () =>{
-  addToCart(item)
+const ClickCount = () =>{
+  addToCart(item,count)
+  console.log(item)
 }
 
   const increment = () => {
     if (count < stock && stockReal > 0) {
       setCount((prev) => prev + 1);
+      
       descontarStock(1);
     }
   };
@@ -35,19 +37,13 @@ const AgregarCarrito = () =>{
     }
   }, [stock, stockReal]);
 
-  // useEffect(() => {
-  //   console.log("Carrito actualizado:", cart);
-  // }, [cart]);
-
-
-
   return (
     <div>
       <div className="item-count">
         <button onClick={decrement}>-</button>
         <p>{count}</p>
         <button onClick={increment}>+</button>
-        <button onClick={AgregarCarrito}>Agregar al Carrito</button>
+        <button onClick={ClickCount}>Agregar al Carrito</button>
       </div>
     </div>
   );
