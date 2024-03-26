@@ -3,9 +3,7 @@ import ItemCount from "../ItemCount/ItemCount";
 
 import { useContext, useEffect,useState } from "react";
 import addToCart from '../CartContext/CartContext'
-// const dario = ()=>{
-//     addToCart(product)
-//   }
+
 
 
 const ItemDetail = ({ ProductoSeleccionado }) => {
@@ -13,9 +11,6 @@ const ItemDetail = ({ ProductoSeleccionado }) => {
     useEffect(() => {
         }, []);
 
-        // const clickAgregarProducto = () => {
-        //     addToCart(ProductoSeleccionado)
-        //   }
 
     if (!ProductoSeleccionado) {
         return <div>Cargando...</div>;
